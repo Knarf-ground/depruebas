@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>testSurvey</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Product Test Survey</h1>
+            <p class="description">Give us your opinion about our product!</p>
+        </header>
+<form id="survey-form">
+    <div class="form__div">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" class="form-at" required>
+    </div>
+    <div class="form__div">
+        <label id="email-label" for="email">E-mail</label>
+        <input type="text" name="email" id="email" placeholder="E-Mail" class="form-at" required>
+    </div>
+    <div class="form__div">
+        <label id="age" for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="99" placeholder="Age" class="form-at">
+    </div>
+    <div class="form__div">
+        <p>What is your current ocupation ?</p>
+        <select id="dropdown" name="role" class="form-at" required>
+            <option disabled selected value>Select current ocupation</option>
+            <option value="Student">Student</option>
+            <option value="Student/job">Student w/ part-time job</option>
+            <option value="fulltime">Full-time Job</option>
+            <option value="parttime">Part-time Job</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="form__div">
+        <p>Would you recommend our product to someone else ?</p>
+        <label>
+            <input name ="reco" type="radio" value="yes" class="input-radio" checked>Yes
+        </label>
+        <label>
+            <input name="reco" type="radio" value="no" class="input-radio" checked>No
+        </label>
+        <label>
+            <input name="reco" type="radio" value="Maybe" class="input-radio" checked>Maybe
+        </label>
+    </div>
+    <div class="form__div">
+        <p>How do you hear about our product ?</p>
+        <label>
+            <input name="hearabout" type="radio" value="yes" class="input-radio">From Internet
+        </label>
+        <label>
+            <input name="hearabout" type="radio" value="no" class="input-radio">From a friend
+        </label>
+        <label>
+            <input name="hearabout" type="radio" value="Maybe" class="input-radio">From the store
+        </label>
+        <label>
+            <input name="hearabout" type="radio" value="other" class="input-radio">Other
+        </label>
+    </div>
+    <div class="form__div">
+        <p>Which are the things you think we should be improving in the future ?</p>
+        <label>
+            <input type="checkbox" value="power" name="power" class="input-checkbox">Power
+        </label>
+        <label>
+            <input type="checkbox" value="bugs" name="bugs" class="input-checkbox">Bugs and minor problems
+        </label>
+        <label>
+            <input type="checkbox" value="engine" name="engine" class="input-checkbox">Engine structure
+        </label>
+        <label>
+            <input type="checkbox" value="comfort" name="comfort" class="input-checkbox">Comfort
+        </label>
+        <label>
+            <input type="checkbox" value="efficient" name="efficient" class="input-checkbox">Efficient
+        </label>
+        <label>
+            <input type="checkbox" value="price-quality" name="price-quality" class="input-checkbox">Price-Quality ratio
+        </label>
+        <label>
+            <input type="checkbox" value="price-perfomance" name="price-perfomance" class="input-checkbox">Price-Perfomance ratio
+        </label>
+    </div>
+    <div class="form__div">
+        <p class="comments">Please, leave us a comment with any other information:</p>
+        <textarea id="comments" name="comment" class="input-textarea" placeholder="Leave us your comment here..."></textarea>
+    </div>
+    <div class="form__div">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+</form>
+</div>
+
+</body>
+</html>
