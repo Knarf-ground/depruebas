@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #202020;
+    position: relative;
+    
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(/img/por8.jpg) repeat center fixed;
+    background-size: cover;
+    opacity: 0.1;
+}
+#main__header {
+    display: flex;
+    color: #93ff93;
+    text-shadow: 1px 1px #202020;
+    width: 150vh;
+    justify-content: center;
+    margin: 2px 250px;
+    padding: 60px;
+    background-color: #202020;
+}
+h1 {
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-weight: 100;
+    
+}
+h1:hover{
+    color: #25ad55;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#main__nav {
+    display: flex;
+    position: fixed;
+    margin: 10px 20px;
+    color: #f9fff9;
+    font-size: 35px;
+    text-shadow: 1px 1px #25ad55;
+
+}
+.fa-frog {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    
+}
+.navi {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f8d4541;
+    padding-top: auto;
+    position: relative;
+    
+}
+.fa-frog:hover {
+    cursor: pointer;
+    color: #a0f0a0;
+}
+.fa-frog:hover nav{
+    animation-name: dropdown;
+    animation-duration: 0.6s;
+    animation-fill-mode:backwards;
+}
+.fa-frog:hover::after {
+    animation-name: dropdown;
+    animation-duration: 0.6s;
+    animation-fill-mode:backwards;
+
+}
+
+.fa-frog:hover a{
+    display: flex;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+    
+@keyframes dropdown {
+    0% {transform: translateX(-200px);}
+    20% {transform: translateX(-150px);}
+    40% {transform: translateX(-100px);}
+    60% {transform: translateX(-50px);}
+    80% {transform: translateX(-10px);}
+    100% {transform: translateX(0);}
+}
+
+a {
+    display: none;
+    position: relative;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a0f0a0;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin: 10px 20px 15px 20px;
+    padding: 0 10px;
+    
+}
+a:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-color: #59fd93;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -15px;
+    align-items: center;
+    transition: all 0.2s;
+    transition-delay: 0.1s;
+    
+}
+
+a:hover {
+    color: #f9fff9;
+    
+}
+a:hover:after {
+    width: 100%;
+    
+}
+#flex-container {
+    display: flex;
+    padding: 2px;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1200px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.container {
+    width: 30%;
+    height: 550px;
+    max-height: 30%;
+    margin: 10px 0;
+    background-color: #20202044;
+    box-shadow: 2px 2px 5px #acacac50;
+    color: #ccc;
+    overflow: hidden;
+
+}
+.container:hover {
+    cursor: zoom-in;
+    box-shadow: 1px 1px 5px #a0f0a093;
+
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    padding: 6px;
+    border-bottom-right-radius: 18px;
+}
+p {
+    padding: 0 15px;
+    margin: 10px 0;
+}
+h4 {
+    text-align: center;
+    color: #ccc;
+    text-shadow: 1px 1px #578057;
+    font-family: Arial, Helvetica, sans-serif;
+}
